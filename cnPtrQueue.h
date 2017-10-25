@@ -13,14 +13,14 @@ namespace CS3358_FA17_A5P2
       typedef std::size_t size_type;
       cnPtrQueue();
       bool empty() const;
-      size_type size() const; // returns # of items in queue
+      size_type size() const;
       CNode* front();
       void push(CNode* cnPtr);
       void pop();
    private:
       std::stack<CNode*> inStack;
       std::stack<CNode*> outStack;
-      size_type numItems;     // # of items in queue
+      size_type numItems;
    };
 }
 
